@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+a {
+	color: #7b6a74;
+	text-decoration: none;
+}
 main {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -104,6 +108,10 @@ header {
     vertical-align: middle;
     width: 255px;
 }
+::-webkit-input-placeholder { color:#7b6a74; }
+::-moz-placeholder { color:#7b6a74; } /* firefox 19+ */
+:-ms-input-placeholder { color:#7b6a74; } /* ie */
+input:-moz-placeholder { color:#7b6a74; }
 .form_sub button{
 	background: #7b6a74;
     border: 0 none;
