@@ -38,6 +38,25 @@ header p, header ul, header ul li {
     right: 5px;
     top: 5px;
 }
+.social ul li {
+    padding-left: 16px;
+    background-size: 14px auto;
+}
+.social .fb {
+	background: rgba(0, 0, 0, 0) url("../img/pic-fb.svg") no-repeat scroll 0 0 / 14px auto;
+}
+.social .twitter {
+	background: rgba(0, 0, 0, 0) url("../img/pic-twit.svg") no-repeat scroll 0 0 / 14px auto;
+}
+.social .insta {
+	background: rgba(0, 0, 0, 0) url("../img/pic-insta.svg") no-repeat scroll 0 0 / 14px auto;
+}
+.social .youtube {
+	background: rgba(0, 0, 0, 0) url("../img/pic-yout.svg") no-repeat scroll 0 0 / 14px auto;
+}
+.social .google {
+	background: rgba(0, 0, 0, 0) url("../img/pic-googl.svg") no-repeat scroll 0 0 / 14px auto;
+}
 .main-content > p {
 	margin-top: 25px;
 	font-size: 38px;
@@ -69,7 +88,7 @@ header p, header ul, header ul li {
     width: 255px;
 }
 .form_sub button{
-	background: green none repeat scroll 0 0;
+	background: #7b6a74;
     border: 0 none;
     border-radius: 5px;
     color: #fff;
