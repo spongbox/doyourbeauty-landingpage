@@ -3,13 +3,20 @@
 	padding: 0;
 }
 main {
-	background: url("../img/Landing_bg.jpg");
-	height: 100vh;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+    box-sizing: border-box;
+	background: url("../img/Landing_bg.jpg") no-repeat scroll right bottom transparent;
+	min-height: 100vh;
     width: 100%;
     background-size: cover;
     font-family: helvetica,arial,sans-serif;
     text-align: center;
     color: #7b6a74;
+    padding-bottom: 24px;
+    position: relative;
 }
 header {
 	-webkit-box-sizing: border-box;
@@ -21,22 +28,25 @@ header {
     max-width: 1200px;
     margin: 0 auto;
 }
-header p, header ul, header ul li {
+.social ul, .social ul li {
 	display: inline-block;
 	vertical-align: middle;
 }
 .logo {
 	margin: 0 auto;
-    width: 28%;
+    width: 19%;
 }
 .logo img {
     height: auto;
     width: 100%;
 }
-.social {
-    position: absolute;
-    right: 5px;
-    top: 5px;
+.social_container {
+    margin: 45px 0;
+}
+.social > p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 4px;
 }
 .social ul li {
     padding-left: 16px;
@@ -57,9 +67,13 @@ header p, header ul, header ul li {
 .social .google {
 	background: rgba(0, 0, 0, 0) url("../img/pic-googl.svg") no-repeat scroll 0 0 / 14px auto;
 }
+.main-content {
+    font-weight: 200;
+    margin-bottom: 45px;
+    margin-top: 6px;
+}
 .main-content > p {
-	margin-top: 25px;
-	font-size: 38px;
+	font-size: 3vw;
 }
 .form_sub {
 	-webkit-box-sizing: border-box;
@@ -67,15 +81,18 @@ header p, header ul, header ul li {
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
     box-sizing: border-box;
-    bottom: 45px;
     padding: 0 8%;
-    position: absolute;
     width: 100%;
 }
 .form_sub > p {
-    margin-bottom: 25px;
+    margin-bottom: 4px;
 }
 .form_sub input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+    box-sizing: border-box;
     background: rgba(123, 106, 116, 0.3) none repeat scroll 0 0;
     border: 1px solid rgba(123, 106, 116, 0.6);
     border-radius: 5px;
@@ -97,10 +114,9 @@ header p, header ul, header ul li {
     height: 35px;
     padding: 0 15px;
     vertical-align: middle;
+    cursor: pointer;
 }
 footer {
-    border-top: 1px solid;
-    bottom: 0;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
@@ -110,6 +126,44 @@ footer {
     font-style: italic;
     margin-top: 5px;
     padding: 5px;
-    position: absolute;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+@media screen and (max-width: 768px){
+	main{
+		background-position: -150px 0;
+	}
+	.form_sub form, .form_sub > p {
+		width: 80%;
+		margin: 0 auto 4px;
+	}
+	.form_sub input{
+	    display: block;
+	    height: 42px;
+	    width: 100%;
+	}
+	.form_sub button {
+		height: 42px;
+	    margin-top: 4px;
+	    width: 100%;
+	}
+	.social{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 360px){
+	main {
+	    background-position: -290px -70px;
+	}
+	.form_sub form, .form_sub > p{
+		width: 100%;
+	}
+	.social ul li{
+		display: block;
+		text-align: left;
+		padding-left: 22px;
+		margin-bottom: 4px;
+	}
 }
