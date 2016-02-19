@@ -40,25 +40,25 @@ main {
 .main-content > * {
     margin: 0 auto;
     max-width: 290px;
-    text-align: left;
+    text-align: justify;
     width: 100%;
 }
 .main-content .slogan{
 	font-size: 26px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	line-height: 32px;
 }
 .main-content .soon{
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 100;
 	margin-bottom: 30px;
 }
 .main-content .expl{
 	line-height: 24px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .social_container{
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .social ul, .social ul li {
 	display: inline-block;
@@ -95,6 +95,7 @@ main {
     margin: 0 auto 4px;
     max-width: 320px;
     text-align: left;
+    line-height: 24px;
 }
 .form_sub input {
 	-webkit-box-sizing: border-box;
@@ -154,11 +155,11 @@ footer {
     box-sizing: border-box;
     font-size: 10px;
     font-style: italic;
-    padding: 5px 14% 5px 5px;
+    padding: 5px;
     width: 100%;
     position: absolute;
     bottom: 0;
-    text-align: right;
+    text-align: center;
 }
 @media screen and (max-width: 768px){
 	main{
