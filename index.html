@@ -8,19 +8,29 @@
 </head>
 <body>
   <main>
-    <figure class="logo_container">
-      <img src="img/logo.png">
-    </figure>
   	<section class="main-content">
-  		<!-- <p class="slogan">Votre beauté vous<br>appartient</p> -->
-      <p class="soon">Bientôt en ligne</p>
+      <figure class="logo_container">
+        <img src="img/logo.svg">
+      </figure>
+  		<h1 class="slogan">Votre beauté vous appartient</h1>
       <p class="expl">
-        Do Your Beauty vous propose un produit personnalisable au maximum. Un cosmétique qui vous correspond parfaitement, un produit unique, car vous le créez ! Nous nous engageons à contribuer à votre bien-être quotidien en vous proposant des produits de bonne qualité, bénéfiques pour votre santé et certifiés par notre laboratoire. Grâce à Do Your Beauty vous aurez le contrôle sur les cosmétiques que vous mettez sur votre peau, avec le luxe de les recevoir chez vous, tout prêt !
+        L'innovation au service de votre bien-être
       </p>
+
+      <div class="form_sub">
+        <p id="formsub-title">Recevoir la newsletter</p>
+        <form id="email-registration">
+          <input type="email" name="email" placeholder="exemple@exemple.com" required/>
+          <div class="partners">
+            <input id="cb1" name="cb1" type="checkbox"><label for="cb1">J'accepte de recevoir les informations<br>de vos partenaires</label>
+          </div>
+          <button type="button" name="button">Valider</button>
+        </form>
+      </div>
 
       <div class="social_container">
         <div class="social">
-          <p>Suivez notre actualité</p>
+          <!-- <p>Suivez notre actualité</p> -->
           <ul>
             <li class="fb"><a href="https://www.facebook.com/doyourbeauty?__mref=message" target="_blank"></a></li>
             <li class="twitter"><a href="https://twitter.com/DoYourBeauty" target="_blank"></a></li>
@@ -30,19 +40,10 @@
           </ul>
         </div>
       </div>
-
-      <div class="form_sub">
-        <p id="formsub-title">Pour être informé de la mise en ligne de notre site</p>
-        <form id="email-registration">
-          <input type="email" name="email" placeholder="Renseignez votre adresse mail ici" required/>
-          <button type="button" name="button">Valider</button>
-        </form>
-      </div>
-
-      <footer>
-        <div class="mention">©Spongebox - Etudiants à l'IESA MMD</div>
-      </footer>
   	</section>
+    <footer>
+      <div class="mention">©Spongebox - Etudiants de l'IESA MMD</div>
+    </footer>
   </main>
   <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
